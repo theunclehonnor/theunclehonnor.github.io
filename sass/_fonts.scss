@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Playfair Display';
+	font-display: swap;
+	src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin regular {
+	font-family: 'Playfair Display', serif;
+}

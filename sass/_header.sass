@@ -1,0 +1,90 @@
+.myProfile
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	&__header
+		display: flex
+	&__photo
+    background: rgba(217, 217, 217, 0.4)
+    display: flex
+	&__myPhoto
+		// max-width: 100%
+		width: 203px
+		height: 202px
+		padding: 100px 66px
+	&__title 
+    padding: 110px 61px 32px 61px
+.title
+	&__block
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__fullName
+		+regular
+		font-weight: lighter
+		font-size: 62px
+		margin: 0
+	&__profession
+		+regular
+		font-weight: lighter
+		font-size: 34px
+		color: rgba(0, 0, 0, 0.35)
+		margin: 0
+		margin-top: 15px
+	&__icons
+		width: 260px
+		margin: 40px 0
+		display: flex
+		justify-content: space-between
+.line_header
+	width: 585px
+	margin-top: 22px
+//all
+.line
+	border: 1.5px solid rgba(0, 0, 0, 0.7)
+
+@media( max-width: 1137px)
+	.title
+		&__fullName
+			font-size: 48px
+		&__profession
+			font-size: 25px
+@media ( max-width: 1040px)
+	.myProfile
+		&__photo
+			width: 100%
+			justify-content: center
+@media ( max-width: 725px)
+	.myProfile
+		width: 100%
+		&__header
+			display: inline
+		&__title 
+			padding: 0
+		&__photo
+			padding: 12px 0
+		&__myPhoto
+			width: 114px
+			height: 124px
+			padding: 0
+	.title
+		&__fullName
+			font-size: 28px
+		&__profession
+			font-size: 20px
+		&__icons
+			margin: 10px 0 18px 0
+	.line_header
+		width: 313px
+	.icon
+		&__mail
+			width: 20px
+			height: 20px
+		&__telegram
+			width: 20px
+			height: 20px
+		&__vk
+			width: 20px
+			height: 20px
+	
+
